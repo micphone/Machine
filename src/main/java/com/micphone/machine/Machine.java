@@ -1,5 +1,6 @@
 package com.micphone.machine;
 
+import com.micphone.machine.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -17,6 +18,7 @@ public class Machine {
     public Machine(IEventBus modEventBus) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+        ModItems.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

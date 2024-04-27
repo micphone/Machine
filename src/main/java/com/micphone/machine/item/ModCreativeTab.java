@@ -10,12 +10,18 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+/*
+* The CreativeTab for the mod
+* */
 public class ModCreativeTab {
+    // The DeferredRegister for the CreativeTab
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Machine.MOD_ID);
 
+    // The string for the tab
     public static final String MACHINE_TAB_STRING = "creaitvetab.machine";
 
+    // The tab
     public static final Supplier<CreativeModeTab> MACHINE_TAB =
             CREATIVE_MODE_TABS.register("machine_tab", () -> CreativeModeTab.builder()
                     .withTabsBefore(CreativeModeTabs.COMBAT)
@@ -30,6 +36,7 @@ public class ModCreativeTab {
                     })
                     .build());
 
+    // The register method
     public static void register(IEventBus bus) {
         CREATIVE_MODE_TABS.register(bus);
     }

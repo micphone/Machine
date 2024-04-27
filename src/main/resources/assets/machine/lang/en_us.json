@@ -3,5 +3,6 @@
   "item.machine.gear" : "Gear",
   "item.machine.lubricant" : "Lubricant",
   "item.machine.mechanicalcore" : "Machanical Core",
-  "item.machine.siliconwafer" : "Silicon Wafer"
+  "item.machine.siliconwafer" : "Silicon Wafer",
+  "creaitvetab.machine" : "mechine item"
 }

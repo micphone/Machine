@@ -3,5 +3,6 @@
   "item.machine.gear" : "齿轮",
   "item.machine.lubricant" : "润滑油",
   "item.machine.mechanicalcore" : "机械核心",
-  "item.machine.siliconwafer" : "硅片"
+  "item.machine.siliconwafer" : "硅片",
+  "creaitvetab.machine" : "机械（物品）"
 }
